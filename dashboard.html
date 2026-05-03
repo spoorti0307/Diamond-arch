@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Dashboard</title>
+</head>
+<body>
+
+<h2>Bookings</h2>
+<table border="1" id="table"></table>
+
+<script>
+const URL = "https://script.google.com/macros/s/AKfycbyC6NVccXN8rtR2ME3dv9RoTg-9BeaxWbaFZg4frCEn0HzHRs_0kwwA5MOghvEtz-woeA/exec";
+
+fetch(URL + "?sheet=Bookings")
+.then(res => res.json())
+.then(data => {
+
+    let table = document.getElementById("table");
+
+    data.forEach(row => {
+        let tr = document.createElement("tr");
+
+        Object.values(row).forEach(val => {
+            let td = document.createElement("td");
+            td.innerText = val;
+            tr.appendChild(td);
+        });
+
+        table.appendChild(tr);
+    });
+
+});
+</script>
+
+</body>
+</html>
