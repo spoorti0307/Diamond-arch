@@ -523,3 +523,39 @@ body {
         text-align: left;
     }
 }
+.contact a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.contact a:hover{
+    opacity: 0.8;
+}
+
+.social-links{
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links img{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: white;
+    padding: 8px;
+    object-fit: contain;
+    transition: 0.3s ease;
+}
+
+.social-links img:hover{
+    transform: scale(1.1);
+}
