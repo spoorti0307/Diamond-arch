@@ -148,3 +148,26 @@ window.addEventListener("DOMContentLoaded", function(){
     })
     .catch(err => console.error("Error loading reviews:", err));
 });
+
+
+function closePopup(){
+    document.getElementById("popup").style.display = "none";
+}
+
+// Close when clicking outside popup box
+window.addEventListener("click", function(e){
+
+    const popup = document.getElementById("popup");
+
+    if(e.target === popup){
+        popup.style.display = "none";
+    }
+});
+
+// Close popup on ESC key
+document.addEventListener("keydown", function(e){
+
+    if(e.key === "Escape"){
+        document.getElementById("popup").style.display = "none";
+    }
+});
