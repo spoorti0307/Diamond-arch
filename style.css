@@ -1,8 +1,4 @@
-/* =========================
-   RESET
-========================= */
-
-*{
+{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -16,9 +12,6 @@ body{
     overflow-x:hidden;
 }
 
-/* =========================
-   POPUP
-========================= */
 
 .popup{
     position:fixed;
@@ -93,10 +86,6 @@ body{
     background:#b08d4f;
 }
 
-/* =========================
-   NAVBAR
-========================= */
-
 .navbar{
     position:sticky;
     top:0;
@@ -148,10 +137,6 @@ body{
     color:white;
     text-decoration:none;
 }
-
-/* =========================
-   HERO
-========================= */
 
 .hero-custom{
     display:grid;
@@ -226,8 +211,8 @@ body{
     margin:auto;
     display:grid;
     grid-template-columns:0.95fr 1.05fr;
-    gap:45px;
-    align-items:center;
+    gap:70px;
+    align-items:center; /* PERFECT CENTER ALIGN */
 }
 
 .values-img{
@@ -238,13 +223,14 @@ body{
 
 .values-img img{
     width:100%;
-    max-width:520px;
-    height:680px;
+    max-width:540px;
+    height:760px;
     object-fit:cover;
     border-radius:35px;
     box-shadow:0 15px 40px rgba(0,0,0,0.12);
 }
 
+/* TEXT SIDE */
 .values-text{
     display:flex;
     flex-direction:column;
@@ -261,7 +247,7 @@ body{
 .values-text h2{
     font-size:64px;
     line-height:1.1;
-    margin-bottom:24px;
+    margin-bottom:28px;
     color:#0f3d2e;
 }
 
@@ -270,18 +256,19 @@ body{
 }
 
 .value-desc{
-    font-size:18px;
-    line-height:1.7;
+    font-size:19px;
+    line-height:1.8;
     color:#444;
-    margin-bottom:28px;
+    margin-bottom:42px;
     max-width:95%;
 }
 
+
 .value-box{
     background:white;
-    padding:24px 26px;
+    padding:22px 24px;
     margin-bottom:18px;
-    border-radius:22px;
+    border-radius:24px;
     box-shadow:0 5px 20px rgba(0,0,0,0.06);
     border-left:5px solid #c8a96a;
     transition:0.3s;
@@ -292,36 +279,32 @@ body{
 }
 
 .value-box h4{
-    font-size:19px;
+    font-size:20px;
     margin-bottom:10px;
     color:#0f3d2e;
 }
 
 .value-box p{
-    font-size:15px;
+    font-size:16px;
     line-height:1.7;
     color:#555;
 }
 
-/* MOBILE VALUES ONLY */
 
-@media(max-width:768px){
+@media(max-width:992px){
 
     .values{
-        padding:55px 18px;
+        padding:70px 20px;
     }
 
     .values-container{
         grid-template-columns:1fr;
-        gap:22px;
+        gap:40px;
     }
 
     .values-img img{
-        width:100%;
         max-width:100%;
-        height:420px;
-        object-fit:cover;
-        border-radius:22px;
+        height:auto;
     }
 
     .values-text{
@@ -329,41 +312,18 @@ body{
     }
 
     .values-text h2{
-        font-size:32px;
-        line-height:1.2;
-        margin-bottom:18px;
+        font-size:42px;
     }
 
     .value-desc{
-        font-size:15px;
-        margin-bottom:18px;
+        margin-bottom:35px;
         max-width:100%;
     }
 
     .value-box{
-        padding:16px 16px;
-        margin-bottom:12px;
-        border-radius:16px;
         text-align:left;
-        box-shadow:0 4px 14px rgba(0,0,0,0.06);
-    }
-
-    .value-box h4{
-        font-size:17px;
-        margin-bottom:6px;
-        line-height:1.4;
-    }
-
-    .value-box p{
-        font-size:13px;
-        line-height:1.5;
     }
 }
-
-
-/* =========================
-   PLOTS
-========================= */
 
 .plots-section{
     padding:80px 20px;
@@ -468,10 +428,6 @@ body{
     background:#c8a96a;
 }
 
-/* =========================
-   AMENITIES
-========================= */
-
 .amenities-section{
     padding:80px 20px;
     background:#faf7f2;
@@ -508,9 +464,6 @@ body{
     box-shadow:0 10px 35px rgba(0,0,0,0.08);
 }
 
-/* =========================
-   LOCATION
-========================= */
 
 .location{
     padding:90px 40px;
@@ -544,19 +497,16 @@ body{
     color:#444;
 }
 
-/* =========================
-   BOOKING
-========================= */
-
 .booking{
-    background:#0b2a20;
+    background:linear-gradient(135deg,#0f3d2e,#06261d);
     padding:100px 20px;
     text-align:center;
-    color:#ffffff;
+    color:white;
     position:relative;
     overflow:hidden;
 }
 
+/* soft glowing background effect */
 .booking::before{
     content:"";
     position:absolute;
@@ -586,6 +536,20 @@ body{
 .booking h2{
     font-size:54px;
     margin-bottom:40px;
+    letter-spacing:1px;
+}
+
+.booking{
+    background:#0b2a20; /* deeper premium green */
+    padding:100px 20px;
+    text-align:center;
+    color:#ffffff;
+}
+
+/* heading with gold highlight */
+.booking h2{
+    font-size:54px;
+    margin-bottom:40px;
     color:#ffffff;
     letter-spacing:1px;
 }
@@ -600,10 +564,11 @@ body{
     border-radius:5px;
 }
 
+
 .booking form{
-    max-width:500px;
+    max-width:650px;
     margin:auto;
-    background:#ffffff;
+    background:#ffffff; /* solid white for clarity */
     padding:40px;
     border-radius:28px;
     box-shadow:0 20px 60px rgba(0,0,0,0.25);
@@ -629,10 +594,12 @@ body{
     box-shadow:0 0 0 3px rgba(200,169,106,0.2);
 }
 
+
 .booking input::placeholder,
 .booking textarea::placeholder{
     color:#888;
 }
+
 
 .booking button{
     width:100%;
@@ -647,15 +614,12 @@ body{
     transition:0.3s;
 }
 
+/* hover */
 .booking button:hover{
     background:#b08d4f;
     transform:translateY(-2px);
     box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
-
-/* =========================
-   REVIEWS
-========================= */
 
 .reviews{
     padding:90px 20px;
@@ -697,9 +661,20 @@ body{
     cursor:pointer;
 }
 
-/* =========================
-   CONTACT
-========================= */
+.review-list{
+    max-width:900px;
+    margin:auto;
+}
+
+.review-box{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    margin-bottom:18px;
+    text-align:left;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
 
 .contact{
     background:#0f3d2e;
@@ -749,10 +724,6 @@ body{
     transform:scale(1.1);
 }
 
-/* =========================
-   MOBILE
-========================= */
-
 @media(max-width:768px){
 
     .navbar{
@@ -774,15 +745,6 @@ body{
 
     .hero-text h2{
         font-size:38px;
-    }
-
-    
-
-    .plots-heading h2,
-    .location-text h2,
-    .booking h2,
-    .reviews h2{
-        font-size:36px;
     }
 
     .plot-card-modern{
