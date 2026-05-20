@@ -801,3 +801,12 @@ body{
         justify-content:center;
     }
 }
+@media(max-width:768px){
+    .booking h2{
+        font-size:36px;
+    }
+
+    .booking form{
+        padding:25px;
+    }
+}
