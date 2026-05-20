@@ -1,10 +1,6 @@
 
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyC6NVccXN8rtR2ME3dv9RoTg-9BeaxWbaFZg4frCEn0HzHRs_0kwwA5MOghvEtz-woeA/exec";
 
-
-// ===============================
-// PLOT SLIDER (UNCHANGED)
-// ===============================
 const plots = [
     {img:"Plot1.jpeg", price:"₹28,00,000 (40R)", location:"Kanand village<br>Velle taluka<br>Pune"},
     {img:"Plot2.jpeg", price:"₹16,00,000 (20R)", location:"Kanand village<br>Velle taluka<br>Pune"},
@@ -46,12 +42,12 @@ document.getElementById("bookingForm").addEventListener("submit", function(e){
     const btn = this.querySelector("button");
     const msg = document.getElementById("successMsg");
 
-    // ✅ Instant UI feedback
+ 
     btn.disabled = true;
     btn.innerText = "Submitted ✔";
     msg.innerText = "✅ Booking successful!";
 
-    // send request in background (no waiting)
+   
     fetch(SCRIPT_URL, {
         method: "POST",
         body: JSON.stringify({
@@ -154,7 +150,7 @@ function closePopup(){
     document.getElementById("popup").style.display = "none";
 }
 
-// Close when clicking outside popup box
+
 window.addEventListener("click", function(e){
 
     const popup = document.getElementById("popup");
@@ -164,7 +160,7 @@ window.addEventListener("click", function(e){
     }
 });
 
-// Close popup on ESC key
+
 document.addEventListener("keydown", function(e){
 
     if(e.key === "Escape"){
