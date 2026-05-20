@@ -197,8 +197,6 @@ body{
 .hero-images .small{
     height:170px;
 }
-
-
 .values{
     padding:90px 50px;
     background:#faf7f2;
@@ -209,10 +207,9 @@ body{
     margin:auto;
     display:grid;
     grid-template-columns:0.95fr 1.05fr;
-    gap:70px;
-    align-items:center; /* PERFECT CENTER ALIGN */
+    gap:45px;
+    align-items:center;
 }
-
 
 .values-img{
     display:flex;
@@ -222,13 +219,12 @@ body{
 
 .values-img img{
     width:100%;
-    max-width:540px;
-    height:760px;
+    max-width:520px;
+    height:680px;
     object-fit:cover;
     border-radius:35px;
     box-shadow:0 15px 40px rgba(0,0,0,0.12);
 }
-
 
 .values-text{
     display:flex;
@@ -246,7 +242,7 @@ body{
 .values-text h2{
     font-size:64px;
     line-height:1.1;
-    margin-bottom:28px;
+    margin-bottom:24px;
     color:#0f3d2e;
 }
 
@@ -255,38 +251,37 @@ body{
 }
 
 .value-desc{
-    font-size:19px;
-    line-height:1.8;
+    font-size:18px;
+    line-height:1.7;
     color:#444;
-    margin-bottom:42px;
+    margin-bottom:28px;
     max-width:95%;
 }
 
-
 .value-box{
     background:white;
-    padding:22px 24px;
+    padding:24px 26px; /* bigger */
     margin-bottom:18px;
-    border-radius:24px;
+    border-radius:22px;
     box-shadow:0 5px 20px rgba(0,0,0,0.06);
     border-left:5px solid #c8a96a;
     transition:0.3s;
 }
 
-.value-box:hover{
-    transform:translateY(-4px);
-}
-
 .value-box h4{
-    font-size:20px;
+    font-size:19px;
     margin-bottom:10px;
     color:#0f3d2e;
 }
 
 .value-box p{
-    font-size:16px;
+    font-size:15px;
     line-height:1.7;
     color:#555;
+}
+
+.value-box:hover{
+    transform:translateY(-4px);
 }
 
 .plots-section{
@@ -392,6 +387,8 @@ body{
     background:#c8a96a;
 }
 
+
+
 .amenities-section{
     padding:80px 20px;
     background:#faf7f2;
@@ -428,6 +425,8 @@ body{
     box-shadow:0 10px 35px rgba(0,0,0,0.08);
 }
 
+
+
 .location{
     padding:90px 40px;
     background:#faf7f2;
@@ -462,7 +461,14 @@ body{
 
 
 
-
+.booking{
+    background:#0b2a20;
+    padding:100px 20px;
+    text-align:center;
+    color:#ffffff;
+    position:relative;
+    overflow:hidden;
+}
 
 .booking::before{
     content:"";
@@ -493,20 +499,6 @@ body{
 .booking h2{
     font-size:54px;
     margin-bottom:40px;
-    letter-spacing:1px;
-}
-
-.booking{
-    background:#0b2a20; /* deeper premium green */
-    padding:100px 20px;
-    text-align:center;
-    color:#ffffff;
-}
-
-/* heading with gold highlight */
-.booking h2{
-    font-size:54px;
-    margin-bottom:40px;
     color:#ffffff;
     letter-spacing:1px;
 }
@@ -521,16 +513,14 @@ body{
     border-radius:5px;
 }
 
-
 .booking form{
     max-width:500px;
     margin:auto;
-    background:#ffffff; /* solid white for clarity */
+    background:#ffffff;
     padding:40px;
     border-radius:28px;
     box-shadow:0 20px 60px rgba(0,0,0,0.25);
 }
-
 
 .booking input,
 .booking textarea{
@@ -546,7 +536,6 @@ body{
     transition:0.3s;
 }
 
-/* focus effect */
 .booking input:focus,
 .booking textarea:focus{
     border-color:#c8a96a;
@@ -557,7 +546,6 @@ body{
 .booking textarea::placeholder{
     color:#888;
 }
-
 
 .booking button{
     width:100%;
@@ -572,12 +560,13 @@ body{
     transition:0.3s;
 }
 
-/* hover */
 .booking button:hover{
     background:#b08d4f;
     transform:translateY(-2px);
     box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
+
+
 
 .reviews{
     padding:90px 20px;
@@ -619,19 +608,6 @@ body{
     cursor:pointer;
 }
 
-.review-list{
-    max-width:900px;
-    margin:auto;
-}
-
-.review-box{
-    background:white;
-    padding:25px;
-    border-radius:20px;
-    margin-bottom:18px;
-    text-align:left;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
-}
 
 
 .contact{
@@ -682,6 +658,7 @@ body{
     transform:scale(1.1);
 }
 
+
 @media(max-width:768px){
 
     .navbar{
@@ -705,24 +682,21 @@ body{
         font-size:38px;
     }
 
+    .values{
+        padding:55px 18px;
+    }
+
     .values-container,
     .location-container{
         grid-template-columns:1fr;
-    }
-
-    /* ONLY VALUES SECTION FIX */
-    .values{
-        padding:60px 18px;
-    }
-
-    .values-container{
-        gap:30px;
+        gap:22px;
     }
 
     .values-img img{
         width:100%;
         max-width:100%;
-        height:auto;
+        height:420px;
+        object-fit:cover;
         border-radius:22px;
     }
 
@@ -731,31 +705,33 @@ body{
     }
 
     .values-text h2{
-        font-size:34px;
+        font-size:32px;
         line-height:1.2;
+        margin-bottom:18px;
     }
 
     .value-desc{
         font-size:15px;
+        margin-bottom:18px;
         max-width:100%;
-        margin-bottom:24px;
     }
 
     .value-box{
-        padding:18px;
-        margin-bottom:14px;
-        border-radius:18px;
-        text-align:left;
-    }
+    padding:18px 18px;
+    margin-bottom:14px;
+    border-radius:18px;
+    text-align:left;
+}
 
-    .value-box h4{
-        font-size:18px;
-    }
+.value-box h4{
+    font-size:18px;
+    margin-bottom:8px;
+}
 
-    .value-box p{
-        font-size:14px;
-        line-height:1.6;
-    }
+.value-box p{
+    font-size:14px;
+    line-height:1.6;
+}
 
     .plots-heading h2,
     .location-text h2,
