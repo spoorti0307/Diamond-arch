@@ -213,7 +213,7 @@ body{
     align-items:center; /* PERFECT CENTER ALIGN */
 }
 
-/* IMAGE SIDE */
+
 .values-img{
     display:flex;
     justify-content:center;
@@ -229,7 +229,7 @@ body{
     box-shadow:0 15px 40px rgba(0,0,0,0.12);
 }
 
-/* TEXT SIDE */
+
 .values-text{
     display:flex;
     flex-direction:column;
@@ -262,7 +262,7 @@ body{
     max-width:95%;
 }
 
-/* VALUE BOXES */
+
 .value-box{
     background:white;
     padding:22px 24px;
@@ -287,40 +287,6 @@ body{
     font-size:16px;
     line-height:1.7;
     color:#555;
-}
-
-@media(max-width:992px){
-
-    .values{
-        padding:70px 20px;
-    }
-
-    .values-container{
-        grid-template-columns:1fr;
-        gap:40px;
-    }
-
-    .values-img img{
-        max-width:100%;
-        height:auto;
-    }
-
-    .values-text{
-        text-align:center;
-    }
-
-    .values-text h2{
-        font-size:42px;
-    }
-
-    .value-desc{
-        margin-bottom:35px;
-        max-width:100%;
-    }
-
-    .value-box{
-        text-align:left;
-    }
 }
 
 .plots-section{
@@ -496,16 +462,8 @@ body{
 
 
 
-.booking{
-    background:linear-gradient(135deg,#0f3d2e,#06261d);
-    padding:100px 20px;
-    text-align:center;
-    color:white;
-    position:relative;
-    overflow:hidden;
-}
 
-/* soft glowing background effect */
+
 .booking::before{
     content:"";
     position:absolute;
@@ -538,8 +496,6 @@ body{
     letter-spacing:1px;
 }
 
-
-
 .booking{
     background:#0b2a20; /* deeper premium green */
     padding:100px 20px;
@@ -565,7 +521,7 @@ body{
     border-radius:5px;
 }
 
-/* FORM CARD - CLEAR CONTRAST */
+
 .booking form{
     max-width:500px;
     margin:auto;
@@ -575,7 +531,7 @@ body{
     box-shadow:0 20px 60px rgba(0,0,0,0.25);
 }
 
-/* INPUT FIELDS */
+
 .booking input,
 .booking textarea{
     width:100%;
@@ -597,13 +553,12 @@ body{
     box-shadow:0 0 0 3px rgba(200,169,106,0.2);
 }
 
-/* placeholder */
 .booking input::placeholder,
 .booking textarea::placeholder{
     color:#888;
 }
 
-/* PREMIUM BUTTON */
+
 .booking button{
     width:100%;
     padding:16px;
@@ -727,7 +682,6 @@ body{
     transform:scale(1.1);
 }
 
-
 @media(max-width:768px){
 
     .navbar{
@@ -756,7 +710,53 @@ body{
         grid-template-columns:1fr;
     }
 
-    .values-text h2,
+    /* ONLY VALUES SECTION FIX */
+    .values{
+        padding:60px 18px;
+    }
+
+    .values-container{
+        gap:30px;
+    }
+
+    .values-img img{
+        width:100%;
+        max-width:100%;
+        height:auto;
+        border-radius:22px;
+    }
+
+    .values-text{
+        text-align:center;
+    }
+
+    .values-text h2{
+        font-size:34px;
+        line-height:1.2;
+    }
+
+    .value-desc{
+        font-size:15px;
+        max-width:100%;
+        margin-bottom:24px;
+    }
+
+    .value-box{
+        padding:18px;
+        margin-bottom:14px;
+        border-radius:18px;
+        text-align:left;
+    }
+
+    .value-box h4{
+        font-size:18px;
+    }
+
+    .value-box p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
     .plots-heading h2,
     .location-text h2,
     .booking h2,
@@ -800,49 +800,4 @@ body{
     .social-links{
         justify-content:center;
     }
- .values{
-        padding:60px 20px;
-    }
-
-    .values-container{
-        grid-template-columns:1fr;
-        gap:25px;
-        text-align:center;
-    }
-
-    .values-img{
-        order:1;
-    }
-
-    .values-img img{
-        width:100%;
-        height:auto;
-        max-width:100%;
-        border-radius:25px;
-    }
-
-    .values-text{
-        order:2;
-        text-align:center;
-    }
-
-    .values-text h2{
-        font-size:32px;
-        line-height:1.2;
-    }
-
-    .value-desc{
-        font-size:15px;
-        margin-bottom:20px;
-        max-width:100%;
-    }
-
-    .value-box{
-        text-align:left;
-        padding:16px;
-        margin-bottom:12px;
-        border-radius:18px;
-    }
 }
-
-
