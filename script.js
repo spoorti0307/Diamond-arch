@@ -6,10 +6,10 @@ const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyC6NVccXN8rtR2ME3dv
 // PLOT SLIDER (UNCHANGED)
 // ===============================
 const plots = [
-    {img:"Plot1.jpeg", price:"₹24,00,000 (40R)", location:"Kanand village<br>Velle taluka<br>Pune"},
+    {img:"Plot1.jpeg", price:"₹28,00,000 (40R)", location:"Kanand village<br>Velle taluka<br>Pune"},
     {img:"Plot2.jpeg", price:"₹16,00,000 (20R)", location:"Kanand village<br>Velle taluka<br>Pune"},
     {img:"Plot3.jpeg", price:"₹9,00,000 (11R)", location:"Kanand village<br>Velle taluka<br>Pune"},
-    {img:"Plot4.jpeg", price:"₹24,00,000 (40R)", location:"Kanand village<br>Velle taluka<br>Pune"},
+    {img:"Plot4.jpeg", price:"₹28,00,000 (40R)", location:"Kanand village<br>Velle taluka<br>Pune"},
     {img:"Plot5.jpeg", price:"₹16,00,000 (20R)", location:"Kanand village<br>Velle taluka<br>Pune"}
 ];
 
