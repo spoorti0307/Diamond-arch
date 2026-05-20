@@ -567,7 +567,7 @@ body{
 
 /* FORM CARD - CLEAR CONTRAST */
 .booking form{
-    max-width:650px;
+    max-width:500px;
     margin:auto;
     background:#ffffff; /* solid white for clarity */
     padding:40px;
@@ -800,13 +800,49 @@ body{
     .social-links{
         justify-content:center;
     }
-}
-@media(max-width:768px){
-    .booking h2{
-        font-size:36px;
+ .values{
+        padding:60px 20px;
     }
 
-    .booking form{
-        padding:25px;
+    .values-container{
+        grid-template-columns:1fr;
+        gap:25px;
+        text-align:center;
+    }
+
+    .values-img{
+        order:1;
+    }
+
+    .values-img img{
+        width:100%;
+        height:auto;
+        max-width:100%;
+        border-radius:25px;
+    }
+
+    .values-text{
+        order:2;
+        text-align:center;
+    }
+
+    .values-text h2{
+        font-size:32px;
+        line-height:1.2;
+    }
+
+    .value-desc{
+        font-size:15px;
+        margin-bottom:20px;
+        max-width:100%;
+    }
+
+    .value-box{
+        text-align:left;
+        padding:16px;
+        margin-bottom:12px;
+        border-radius:18px;
     }
 }
+
+
